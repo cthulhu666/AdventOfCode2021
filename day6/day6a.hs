@@ -6,4 +6,3 @@ main = do
     let xs = parse' str
     let p = foldl (\a _ -> nextDay' a) xs [1..80]
     print $ sum p
---    print $ length $ foldl (\a _ -> nextDay a) xs [1..80]
